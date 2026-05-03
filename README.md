@@ -40,6 +40,7 @@ A backend system for managing financial documents with **Role-Based Access Contr
 
 ## 📁 Project Structure
 
+```
 project/
 │
 ├── main.py
@@ -53,7 +54,7 @@ project/
 ├── uploads/
 └── faiss_indexes/
 
-
+```
 ---
 
 ## 🔄 API Workflow
