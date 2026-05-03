@@ -43,16 +43,16 @@ A backend system for managing financial documents with **Role-Based Access Contr
 ```
 project/
 │
-├── main.py
-├── models.py
-├── database.py
-├── auth.py
-├── rag.py
-├── schemas.py
-├── pdf_utils.py
-├── .env
-├── uploads/
-└── faiss_indexes/
+├── main.py              # FastAPI app entry point; defines all API endpoints (auth, documents, RAG)
+├── models.py            # SQLAlchemy models (database tables: users, roles, documents)
+├── database.py          # Database connection setup and session management (PostgreSQL)
+├── auth.py              # JWT authentication, token handling, and role-based access control (RBAC)
+├── rag.py               # RAG pipeline: chunking, embeddings, FAISS indexing, semantic search
+├── schemas.py           # Pydantic schemas for request/response validation
+├── pdf_utils.py         # Utility functions for extracting text from PDF files
+├── .env                 # Environment variables (DB URL, secret key)
+├── uploads/             # Stores uploaded PDF documents
+└── faiss_indexes/       # Stores FAISS vector indexes (one per document)
 
 ```
 ---
